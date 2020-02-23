@@ -42,7 +42,7 @@ for epoch in range(200):
         pbar.set_description(model.print_loss())
         # break
     if((epoch+1) % int(args['evalp']) == 0):    
-        acc = model.evaluate(test, avg_best, early_stop)
+        acc = model.evaluate(dev, avg_best, early_stop)
         model.scheduler.step(acc)
 
         if(acc >= avg_best):
