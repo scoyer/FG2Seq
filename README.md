@@ -6,7 +6,7 @@ This is the PyTorch implementation of the paper:
 
 This code has been written using PyTorch >= 0.4. If you use any source codes included this toolkit in your work, please cite the following paper. The bibtex are listed below:
 <pre>
-@inproceedings{wu2019global,
+@inproceedings{he2020fg2seq,
   title={FG2SEQ: Effectively Encoding Knowledge for End-to-End Task-oriented Dialog},
   author={He, Zhenhao and He Yuhong and Wu, Qingyao and Chen Jian},
   booktitle={International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
