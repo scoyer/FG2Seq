@@ -1,7 +1,7 @@
 ## FG2SEQ: EFFECTIVELY ENCODING KNOWLEDGE FOR END-TO-END TASK-ORIENTED DIALOG
 
 This is the PyTorch implementation of the paper:
-**FG2SEQ: EFFECTIVELY ENCODING KNOWLEDGE FOR END-TO-END TASK-ORIENTED DIALOG**. [**Zhenhao He**], [Yuhong He], [Qingyao Wu], [Jian Chen]. ***ICASSP 2020***.
+**FG2SEQ: EFFECTIVELY ENCODING KNOWLEDGE FOR END-TO-END TASK-ORIENTED DIALOG**. ***ICASSP 2020***. [paper_link](https://ieeexplore.ieee.org/document/9053667)
 
 
 This code has been written using PyTorch >= 0.4. If you use any source codes included this toolkit in your work, please cite the following paper. The bibtex are listed below:
