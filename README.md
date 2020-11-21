@@ -39,3 +39,9 @@ We created  `myTest.py` to test models. You can run:
 ```console
 ❱❱❱ python myTest.py -path=<path_to_saved_model> 
 ```
+
+## Acknowledgement
+
+**Global-to-local Memory Pointer Networks for Task-Oriented Dialogue**. [Chien-Sheng Wu](https://jasonwu0731.github.io/), [Richard Socher](https://www.socher.org/), [Caiming Xiong](http://www.stat.ucla.edu/~caiming/). ***ICLR 2019***. [[PDF]](https://arxiv.org/abs/1901.04713) [[Open Reivew]](https://openreview.net/forum?id=ryxnHhRqFm) [[Code]](https://github.com/jasonwu0731/GLMP)
+
+>   We are highly grateful for the public code of GLMP!
