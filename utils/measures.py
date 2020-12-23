@@ -70,17 +70,10 @@ def moses_multi_bleu(hypotheses, references, lowercase=False):
 
     
     # Get MOSES multi-bleu script
-    try:
-        multi_bleu_path, _ = urllib.request.urlretrieve(
-            "https://raw.githubusercontent.com/moses-smt/mosesdecoder/"
-            "master/scripts/generic/multi-bleu.perl")
-        os.chmod(multi_bleu_path, 0o755)
-    except: #pylint: disable=W0702
-        print("Unable to fetch multi-bleu.perl script, using local.")
-        metrics_dir = os.path.dirname(os.path.realpath(__file__))
-        bin_dir = os.path.abspath(os.path.join(metrics_dir, "..", "..", "bin"))
-        multi_bleu_path = os.path.join(bin_dir, "tools/multi-bleu.perl")
-
+    metrics_dir = os.path.dirname(os.path.realpath(__file__))
+    bin_dir = os.path.abspath(os.path.join(metrics_dir, "..", "..", "bin"))
+    multi_bleu_path = os.path.join(bin_dir, "tools/multi-bleu.perl")
+    multi_bleu_path = "utils/multi-bleu.perl"
 
     # Dump hypotheses and references to tempfiles
     hypothesis_file = tempfile.NamedTemporaryFile()
