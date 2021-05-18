@@ -316,10 +316,10 @@ class GCNEncoder(nn.Module):
 
         x_transform = torch.matmul(graph, x.unsqueeze(1))   
 
-        if self.B is not None:
-            W = torch.matmul(self.W2, self.W1.permute(1, 0, 2)).permute(1, 0, 2)
-        else:
+        if self.B == 0:
             W = self.W
+        else:
+            W = torch.matmul(self.W2, self.W1.permute(1, 0, 2)).permute(1, 0, 2)
         
         x_transform = x_transform.contiguous().view(x_transform.size(0), graph.size(1), graph.size(2), -1)
         x_transform = x_transform.transpose(0, 1).contiguous().view(x_transform.size(1), -1, x_transform.size(-1))
